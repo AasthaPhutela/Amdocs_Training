@@ -4,28 +4,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Register</title>
+<title>Insert title here</title>
 <link href="css/adminUserRegister.css" rel="stylesheet" type="text/css"/> 
-<style>
-h1 {text-align: center;}
-p {text-align: center;}
-table {text-align: center;}
-/* body{background-color:#F5E79D} */
-</style>
 </head>
 <body>
+<div align="center">
 
- <div align="center">
-  <h1>User Registeration Form</h1><br>
-  <form action="<%= request.getContextPath() %>/user-register" method="post">
+  <h1>Admin Registeration Form</h1><br>
+  <form action="<%= request.getContextPath() %>/admin-register" method="post">
+  
    <table style="with: 80%">
     <tr>
      <td>Name</td>
      <td><input type="text" name="name" /></td>
-    </tr>
-    <tr>
-     <td>Phone No</td>
-     <td><input type="text" name="phone" /></td>
     </tr>
     <tr>
      <td>Email</td>
@@ -35,18 +26,16 @@ table {text-align: center;}
      <td>Password</td>
      <td><input type="password" name="password" /></td>
     </tr>
-    <tr>
-     <td>Address</td>
-     <td><input type="text" name="address" /></td>
-    </tr>
-    <tr>
-     <td>Upload Photo</td>
-     <td><input type="text" name="photo" /></td>
-    </tr>
    </table>
+   
    <br><br>
    <input type="submit" value="Submit" />
+   
   </form>
  </div>
+    <div>
+		<a href="/FinalProject/admin">Home</a>&emsp; <a
+			href="/FinalProject/logout">Log Out</a>&emsp;
+	</div>
 </body>
 </html>
